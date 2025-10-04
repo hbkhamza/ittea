@@ -4,7 +4,7 @@
  
 > [!NOTE]  
 > My old GitHub account was restricted without any reason from GitHub support.  
-> This is the new repository, please share it so people can easily find it backup repo on gitlab [itt](https://gitlab.com/emadadel/itt/-/tree/main) and codeberg [itt](https://codeberg.org/emadadel/itt).  
+> This is the new repository, please share it so people can easily find it. Backup repo repository gitlab [itt](https://gitlab.com/emadadel/itt/-/tree/main) and codeberg [itt](https://codeberg.org/emadadel/itt).  
 
 </p>
 
