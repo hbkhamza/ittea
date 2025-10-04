@@ -210,16 +210,16 @@ Find-Driver
 ChangeTap
 }
 "github"{
-Start-Process("https://github.com/emadadel4/itt")
+Start-Process("https://github.com/emadadeldev/ittea")
 }
 "community"{
 Start-Process("https://t.me/+qnB0HvMH4ocxZDc8")
 }
 "translate"{
-Start-Process("https://github.com/emadadel4/itt/tree/main/locales")
+Start-Process("https://github.com/emadadeldev/ittea/tree/main/locales")
 }
 "donate"{
-Start-Process("https://github.com/emadadel4/itt/blob/main/.github/DONATE.md")
+Start-Process("https://github.com/emadadeldev/ittea/blob/main/.github/DONATE.md")
 }
 }
 }
@@ -2535,14 +2535,14 @@ HorizontalAlignment="Center" VerticalAlignment="Top" Visibility="Hidden" Margin=
 <TextBlock Text='💠 Windows 10 LTS' FontSize='20' Padding='10 25 0 20' Foreground='{DynamicResource PrimaryButtonForeground}' FontWeight='bold' TextWrapping='Wrap'/>
 <Image x:Name='win' Cursor='Hand' ToolTip='Click to visit' Margin='15,0,0,15' Height='Auto' Width='388' HorizontalAlignment='Left'>
 <Image.Source>
-<BitmapImage UriSource='https://raw.githubusercontent.com/emadadel4/itt/5f153c968fafed4a650e83513d3b78087144d77b/static/Images/windows10lts.jpg' CacheOption='OnLoad'/>
+<BitmapImage UriSource='https://raw.githubusercontent.com/emadadeldev/ittea/5f153c968fafed4a650e83513d3b78087144d77b/static/Images/windows10lts.jpg' CacheOption='OnLoad'/>
 </Image.Source>
 </Image>
 <TextBlock Text='Download the official Windows 10 LTS ISO – the stable, long-term support version' FontSize='15' HorizontalAlignment='Left' Padding='10 0 0 10' Foreground='{DynamicResource TextColorSecondaryColor}' TextWrapping='Wrap' MaxWidth='450'/>
 <TextBlock Text='📦 Archive Hub' FontSize='20' Padding='10 25 0 20' Foreground='{DynamicResource PrimaryButtonForeground}' FontWeight='bold' TextWrapping='Wrap'/>
 <Image x:Name='bc' Cursor='Hand' ToolTip='Click to visit' Margin='15,0,0,15' Height='Auto' Width='388' HorizontalAlignment='Left'>
 <Image.Source>
-<BitmapImage UriSource='https://raw.githubusercontent.com/emadadel4/itt/refs/heads/main/static/Images/tgbc.jpg' CacheOption='OnLoad'/>
+<BitmapImage UriSource='https://raw.githubusercontent.com/emadadeldev/ittea/refs/heads/main/static/Images/tgbc.jpg' CacheOption='OnLoad'/>
 </Image.Source>
 </Image>
 <TextBlock Text='Telegram group that Archives all free stuff on the internet' FontSize='15' HorizontalAlignment='Left' Padding='10 0 0 10' Foreground='{DynamicResource TextColorSecondaryColor}' TextWrapping='Wrap' MaxWidth='450'/>

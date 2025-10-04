@@ -162,16 +162,16 @@ function Invoke-Button {
             ChangeTap
         }
         "github"{
-            Start-Process("https://github.com/emadadel4/itt")
+            Start-Process("https://github.com/emadadeldev/ittea")
         }
         "community"{
             Start-Process("https://t.me/+qnB0HvMH4ocxZDc8")
         }
         "translate"{
-            Start-Process("https://github.com/emadadel4/itt/tree/main/locales")
+            Start-Process("https://github.com/emadadeldev/ittea/tree/main/locales")
         }
         "donate"{
-            Start-Process("https://github.com/emadadel4/itt/blob/main/.github/DONATE.md")
+            Start-Process("https://github.com/emadadeldev/ittea/blob/main/.github/DONATE.md")
         }
     }
 

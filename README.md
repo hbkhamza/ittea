@@ -1,3 +1,13 @@
+
+
+<p align="center">
+ 
+> [!NOTE]  
+> My old GitHub account was restricted without any reason from GitHub support.  
+> This is the new repository, please share it so people can easily find it.  
+
+</p>
+
 <p align="center">
   <a href="#-resist-for-justice-in-a-world-ruled-by-authoritarian-regimes" rel="nofollow">
     <img src="https://raw.githubusercontent.com/Safouene1/support-palestine-banner/master/StandWithPalestine.svg" alt="Ceasefire Now" style="width:30%;">
