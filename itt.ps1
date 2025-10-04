@@ -620,17 +620,17 @@ switch ($PKGMan)
 "itt" {
 if (-not (Get-Command itt -ErrorAction SilentlyContinue))
 {
-Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; Invoke-Expression ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/itt-co/bin/refs/heads/main/install.ps1')) *> $null
+Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; Invoke-Expression ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/emadadeldev/bin/refs/heads/main/install.ps1')) *> $null
 }
 else
 {
 try {
 $currentVersion = (itt.exe -ver)
 $installerPath = "$env:TEMP\installer.msi"
-$latestReleaseApi = "https://api.github.com/repos/itt-co/bin/releases/latest"
+$latestReleaseApi = "https://api.github.com/repos/emadadeldev/bin/releases/latest"
 $latestVersion = (Invoke-RestMethod -Uri $latestReleaseApi).tag_name
 if ($latestVersion -eq $currentVersion) {return}
-Invoke-WebRequest "https://github.com/itt-co/bin/releases/latest/download/installer.msi" -OutFile $installerPath
+Invoke-WebRequest "https://github.com/emadadeldev/bin/releases/latest/download/installer.msi" -OutFile $installerPath
 Start-Process msiexec.exe -ArgumentList "/i `"$installerPath`" /q" -NoNewWindow -Wait
 Write-Host "Updated to version $latestVersion successfully."
 }
@@ -1645,11 +1645,11 @@ $itt.$Button.Content = $NonKey
 }
 function Show-Event {
 $itt['window'].FindName('date').text = '10/02/2025'.Trim()
-$itt['window'].FindName('win').add_MouseLeftButtonDown({
-Start-Process('https://linkjust.com/massgravelts')
-})
 $itt['window'].FindName('yt').add_MouseLeftButtonDown({
 Start-Process('https://youtu.be/0kZFi6NT1gI')
+})
+$itt['window'].FindName('win').add_MouseLeftButtonDown({
+Start-Process('https://linkjust.com/massgravelts')
 })
 $itt['window'].FindName('bc').add_MouseLeftButtonDown({
 Start-Process('https://linkjust.com/batmancave')
