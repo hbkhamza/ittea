@@ -1,0 +1,17 @@
+<Grid Row="2">
+    <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="*"/><ColumnDefinition Width="Auto"/>
+    </Grid.ColumnDefinitions>
+
+    <Grid Column="1">
+        <Button Name="installBtn" Content="{Binding Install, TargetNullValue=Install}" Width="140" Height="45" Margin="20"
+                HorizontalAlignment="Center" VerticalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <Button Name="applyBtn" Content="{Binding Apply, TargetNullValue=Apply}" Visibility="Collapsed" Width="140" Height="45" Margin="20"
+                HorizontalAlignment="Center" VerticalAlignment="Center" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+    </Grid>
+
+    <Grid Column="0">
+        <TextBlock Name="statusbar" Foreground="{DynamicResource TextColorPrimary}" Text="✊ #StandWithPalestine" FontWeight="SemiBold" Padding="10 0 0 0" Width="Auto"
+                   HorizontalAlignment="Left" VerticalAlignment="Center" TextWrapping="Wrap"/>
+    </Grid>
+</Grid>

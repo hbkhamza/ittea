@@ -1,0 +1,93 @@
+<Popup x:Name="AboutPopup"
+       AllowsTransparency="True"
+       Placement="Center"
+       StaysOpen="false"
+       PopupAnimation="Fade"
+       IsOpen="false">
+
+    <Border Background="{DynamicResource PrimaryBackgroundColor}"
+            BorderBrush="{DynamicResource BorderBrush}"
+            BorderThickness="2"
+            Width="533" Height="320"
+            Padding="8"
+            CornerRadius="8"
+            SnapsToDevicePixels="True">
+
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="222"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <!-- Left Panel -->
+            <Grid Grid.Column="0">
+                <StackPanel Orientation="Vertical" Margin="0,12,0,0">
+                    <TextBlock Text="itt" 
+                               FontSize="80" FontFamily="Arial" FontWeight="Bold"
+                               HorizontalAlignment="Center" Foreground="{DynamicResource logo}"/>
+                    
+                    <TextBlock Text="Install Tweaks Tool" 
+                               FontSize="13" FontFamily="Arial" FontWeight="SemiBold"
+                               HorizontalAlignment="Center" Foreground="{DynamicResource TextColorPrimary}"/>
+                    
+                    <TextBlock Text="9/30/2025" Name="ver" Margin="0,5,0,0" 
+                               FontSize="12" FontFamily="Arial" FontWeight="Regular"
+                               HorizontalAlignment="Center" TextAlignment="Left" Foreground="{DynamicResource TextColorPrimary}"/>
+
+                    <TextBlock Text="Contributors" 
+                               FontSize="13" FontFamily="Arial" 
+                               Foreground="{DynamicResource TextColorPrimary}" HorizontalAlignment="Center" Margin="0,15,0,0"/>
+
+                    <ScrollViewer VerticalScrollBarVisibility="Auto" Margin="0,15,0,0" Height="80">
+                        <StackPanel Orientation="Vertical" Margin="15,0,0,0">
+                            <!-- names -->
+                        </StackPanel>
+                    </ScrollViewer>
+                </StackPanel>
+            </Grid>
+
+            <!-- Right Panel -->
+            <StackPanel Orientation="Vertical" Grid.Column="1" Margin="8" VerticalAlignment="Center">
+                <!-- Source Code -->
+                <Border Name="github" Style="{StaticResource HighlightBorder}">
+                    <StackPanel Orientation="Vertical">
+                        <TextBlock Text="🛠 Source code" 
+                                   FontSize="16" FontFamily="Segoe UI" Foreground="{DynamicResource TextColorPrimary}"/>
+                        <TextBlock Text="Browse the full project on GitHub" Margin="0,2,0,0" 
+                                   FontSize="12" FontFamily="Segoe UI" Foreground="{DynamicResource TextColorPrimary}"/>
+                    </StackPanel>
+                </Border>
+
+                <!-- Translate -->
+                <Border Name="translate" Style="{StaticResource HighlightBorder}">
+                    <StackPanel Orientation="Vertical">
+                        <TextBlock Text="🌍 Help to translate" 
+                                   FontSize="16" FontFamily="Segoe UI" Foreground="{DynamicResource TextColorPrimary}"/>
+                        <TextBlock Text="Contribute your language to the project" Margin="0,2,0,0" 
+                                   FontSize="12" FontFamily="Segoe UI" Foreground="{DynamicResource TextColorPrimary}"/>
+                    </StackPanel>
+                </Border>
+
+                <!-- Community -->
+                <Border Name="community" Style="{StaticResource HighlightBorder}">
+                    <StackPanel Orientation="Vertical">
+                        <TextBlock Text="💬 Community chat" 
+                                   FontSize="16" FontFamily="Segoe UI" Foreground="{DynamicResource TextColorPrimary}"/>
+                        <TextBlock Text="Join our group and stay connected" Margin="0,2,0,0" 
+                                   FontSize="12" FontFamily="Segoe UI" Foreground="{DynamicResource TextColorPrimary}"/>
+                    </StackPanel>
+                </Border>
+
+                <Border Name="donate" Style="{StaticResource HighlightBorder}">
+                    <StackPanel Orientation="Vertical">
+                        <TextBlock Text="❤ Donate" 
+                                   FontSize="16" FontFamily="Segoe UI" Foreground="{DynamicResource TextColorPrimary}"/>
+                        <TextBlock Text="Be listed as one of our contributors" Margin="0,2,0,0" 
+                                   FontSize="12" FontFamily="Segoe UI" Foreground="{DynamicResource TextColorPrimary}"/>
+                    </StackPanel>
+                </Border>
+
+            </StackPanel>
+        </Grid>
+    </Border>
+</Popup>
