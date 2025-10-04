@@ -5,7 +5,7 @@
     "Category": "Performance",
     "IsChecked": false,
     "Script": [
-      "irm https://raw.githubusercontent.com/itt-co/itt-tweaks/refs/heads/main/Disk%20cleanup/run.ps1 | iex"
+      "irm https://raw.githubusercontent.com/emadadeldev/itt-tweaks/refs/heads/main/Disk%20cleanup/run.ps1 | iex"
     ]
   },
   {
@@ -14,7 +14,7 @@
     "Category": "Fixer",
     "IsChecked": false,
     "Script": [
-      "irm https://raw.githubusercontent.com/itt-co/itt-tweaks/refs/heads/main/SFC/run.ps1 | iex"
+      "irm https://raw.githubusercontent.com/emadadeldev/itt-tweaks/refs/heads/main/SFC/run.ps1 | iex"
     ]
   },
   {
@@ -23,7 +23,7 @@
     "Category": "Classic",
     "IsChecked": false,
     "Script": [
-      "irm https://raw.githubusercontent.com/itt-co/itt-tweaks/refs/heads/main/Restore%20Classic%20Context%20Menu%20Windows%2011/run.ps1 | iex"
+      "irm https://raw.githubusercontent.com/emadadeldev/itt-tweaks/refs/heads/main/Restore%20Classic%20Context%20Menu%20Windows%2011/run.ps1 | iex"
     ]
   },
   {
@@ -32,7 +32,7 @@
     "Category": "Fixer",
     "IsChecked": false,
     "Script": [
-      "irm https://raw.githubusercontent.com/itt-co/itt-tweaks/refs/heads/main/Restore%20All%20Windows%20Services%20to%20Default/run.ps1 | iex"
+      "irm https://raw.githubusercontent.com/emadadeldev/itt-tweaks/refs/heads/main/Restore%20All%20Windows%20Services%20to%20Default/run.ps1 | iex"
     ]
   },
   {
@@ -41,7 +41,7 @@
     "Category": "Performance",
     "IsChecked": false,
     "Script": [
-      "irm https://raw.githubusercontent.com/itt-co/itt-tweaks/refs/heads/main/Clean%20Taskbar/run.ps1 | iex"
+      "irm https://raw.githubusercontent.com/emadadeldev/itt-tweaks/refs/heads/main/Clean%20Taskbar/run.ps1 | iex"
     ]
   },
   {
@@ -50,7 +50,7 @@
     "Category": "Performance",
     "IsChecked": false,
     "Script": [
-      "irm https://raw.githubusercontent.com/itt-co/itt-tweaks/refs/heads/main/Remove%20MS%20Apps/run.ps1 | iex"
+      "irm https://raw.githubusercontent.com/emadadeldev/itt-tweaks/refs/heads/main/Remove%20MS%20Apps/run.ps1 | iex"
     ]
   },
   {
@@ -59,7 +59,7 @@
     "Category": "Performance",
     "IsChecked": false,
     "Script": [
-      "irm https://raw.githubusercontent.com/itt-co/itt-tweaks/refs/heads/main/Remove%20Xbox%20apps/run.ps1 | iex"
+      "irm https://raw.githubusercontent.com/emadadeldev/itt-tweaks/refs/heads/main/Remove%20Xbox%20apps/run.ps1 | iex"
     ]
   },
   {
@@ -68,7 +68,7 @@
     "Category": "Performance",
     "IsChecked": false,
     "Script": [
-      "irm https://raw.githubusercontent.com/itt-co/itt-tweaks/refs/heads/main/Fix%20Stutter/run.ps1 | iex"
+      "irm https://raw.githubusercontent.com/emadadeldev/itt-tweaks/refs/heads/main/Fix%20Stutter/run.ps1 | iex"
     ]
   },
   {
@@ -77,7 +77,7 @@
     "Category": "Power",
     "IsChecked": false,
     "Script": [
-      "irm https://raw.githubusercontent.com/itt-co/itt-tweaks/refs/heads/main/Enable%20Ultimate%20Performance%20Power%20Plan/run.ps1 | iex"
+      "irm https://raw.githubusercontent.com/emadadeldev/itt-tweaks/refs/heads/main/Enable%20Ultimate%20Performance%20Power%20Plan/run.ps1 | iex"
     ]
   },
   {
@@ -86,7 +86,7 @@
     "Category": "Fixer",
     "IsChecked": false,
     "Script": [
-      "irm https://raw.githubusercontent.com/itt-co/itt-tweaks/refs/heads/main/Netsh/run.ps1 | iex"
+      "irm https://raw.githubusercontent.com/emadadeldev/itt-tweaks/refs/heads/main/Netsh/run.ps1 | iex"
     ]
   },
   {
@@ -95,7 +95,7 @@
     "Category": "Classic",
     "IsChecked": false,
     "Script": [
-      "irm https://raw.githubusercontent.com/itt-co/itt-tweaks/refs/heads/main/Setup%20Auto%20login/run.ps1 | iex"
+      "irm https://raw.githubusercontent.com/emadadeldev/itt-tweaks/refs/heads/main/Setup%20Auto%20login/run.ps1 | iex"
     ]
   },
   {
@@ -104,7 +104,7 @@
     "Category": "Performance",
     "IsChecked": false,
     "Script": [
-      "irm https://raw.githubusercontent.com/itt-co/itt-tweaks/refs/heads/main/Disable%20Xbox%20Services/run.ps1 | iex"
+      "irm https://raw.githubusercontent.com/emadadeldev/itt-tweaks/refs/heads/main/Disable%20Xbox%20Services/run.ps1 | iex"
     ]
   },
   {
@@ -113,7 +113,7 @@
     "Category": "Privacy",
     "IsChecked": false,
     "Script": [
-      "irm https://raw.githubusercontent.com/itt-co/itt-tweaks/refs/heads/main/Disable%20Start%20Menu%20Ads/run.ps1 | iex"
+      "irm https://raw.githubusercontent.com/emadadeldev/itt-tweaks/refs/heads/main/Disable%20Start%20Menu%20Ads/run.ps1 | iex"
     ]
   },
   {
@@ -122,7 +122,7 @@
     "Category": "Performance",
     "IsChecked": false,
     "Script": [
-      "irm https://raw.githubusercontent.com/itt-co/itt-tweaks/refs/heads/main/Disable%20Background%20apps/run.ps1 | iex"
+      "irm https://raw.githubusercontent.com/emadadeldev/itt-tweaks/refs/heads/main/Disable%20Background%20apps/run.ps1 | iex"
     ]
   },
   {
@@ -131,7 +131,7 @@
     "Category": "Privacy",
     "IsChecked": false,
     "Script": [
-      "irm https://raw.githubusercontent.com/itt-co/itt-tweaks/refs/heads/main/Disable%20suggestions%20on%20Start%20Menu/run.ps1 | iex"
+      "irm https://raw.githubusercontent.com/emadadeldev/itt-tweaks/refs/heads/main/Disable%20suggestions%20on%20Start%20Menu/run.ps1 | iex"
     ]
   },
   {
@@ -140,7 +140,7 @@
     "Category": "Performance",
     "IsChecked": false,
     "Script": [
-      "irm https://raw.githubusercontent.com/itt-co/itt-tweaks/refs/heads/main/Remove%20Folder%20Shortcuts%20From%20File%20Explorer/run.ps1 | iex"
+      "irm https://raw.githubusercontent.com/emadadeldev/itt-tweaks/refs/heads/main/Remove%20Folder%20Shortcuts%20From%20File%20Explorer/run.ps1 | iex"
     ]
   },
   {
@@ -149,7 +149,7 @@
     "Category": "Performance",
     "IsChecked": false,
     "Script": [
-      "irm https://raw.githubusercontent.com/itt-co/itt-tweaks/refs/heads/main/Optimize%20Windows%20Services/run.ps1 | iex"
+      "irm https://raw.githubusercontent.com/emadadeldev/itt-tweaks/refs/heads/main/Optimize%20Windows%20Services/run.ps1 | iex"
     ]
   },
   {
@@ -158,7 +158,7 @@
     "Category": "Performance",
     "IsChecked": false,
     "Script": [
-      "irm https://raw.githubusercontent.com/itt-co/itt-tweaks/refs/heads/main/Disable%20Hibernate/run.ps1 | iex"
+      "irm https://raw.githubusercontent.com/emadadeldev/itt-tweaks/refs/heads/main/Disable%20Hibernate/run.ps1 | iex"
     ]
   },
   {
@@ -167,7 +167,7 @@
     "Category": "Performance",
     "IsChecked": false,
     "Script": [
-      "irm https://raw.githubusercontent.com/itt-co/itt-tweaks/refs/heads/main/Disable%20OneDrive/run.ps1 | iex"
+      "irm https://raw.githubusercontent.com/emadadeldev/itt-tweaks/refs/heads/main/Disable%20OneDrive/run.ps1 | iex"
     ]
   },
   {
@@ -176,7 +176,7 @@
     "Category": "Performance",
     "IsChecked": false,
     "Script": [
-      "irm https://raw.githubusercontent.com/itt-co/itt-tweaks/refs/heads/main/Remove%20Onedrive/run.ps1 | iex"
+      "irm https://raw.githubusercontent.com/emadadeldev/itt-tweaks/refs/heads/main/Remove%20Onedrive/run.ps1 | iex"
     ]
   },
   {
@@ -185,7 +185,7 @@
     "Category": "Classic",
     "IsChecked": false,
     "Script": [
-      "irm https://raw.githubusercontent.com/itt-co/itt-tweaks/refs/heads/main/Old%20Photo%20Viewer/run.bat | iex"
+      "irm https://raw.githubusercontent.com/emadadeldev/itt-tweaks/refs/heads/main/Old%20Photo%20Viewer/run.bat | iex"
     ]
   },
   {
@@ -194,7 +194,7 @@
     "Category": "Privacy",
     "IsChecked": false,
     "Script": [
-      "irm https://raw.githubusercontent.com/itt-co/itt-tweaks/refs/heads/main/Remove%20Copilot%20Windows%2011/run.ps1 | iex"
+      "irm https://raw.githubusercontent.com/emadadeldev/itt-tweaks/refs/heads/main/Remove%20Copilot%20Windows%2011/run.ps1 | iex"
     ]
   },
   {
@@ -203,7 +203,7 @@
     "Category": "Privacy",
     "IsChecked": false,
     "Script": [
-      "irm https://raw.githubusercontent.com/itt-co/itt-tweaks/refs/heads/main/Disable%20Recall%20Snapshots%20in%20Windows%2011%2024H/run.ps1 | iex"
+      "irm https://raw.githubusercontent.com/emadadeldev/itt-tweaks/refs/heads/main/Disable%20Recall%20Snapshots%20in%20Windows%2011%2024H/run.ps1 | iex"
     ]
   },
   {
@@ -212,7 +212,7 @@
     "Category": "Performance",
     "IsChecked": false,
     "Script": [
-      "irm https://raw.githubusercontent.com/itt-co/itt-tweaks/refs/heads/main/Delete%20Thumbnail%20Cache/run.ps1 | iex"
+      "irm https://raw.githubusercontent.com/emadadeldev/itt-tweaks/refs/heads/main/Delete%20Thumbnail%20Cache/run.ps1 | iex"
     ]
   },
   {
@@ -221,7 +221,7 @@
     "Category": "Classic",
     "IsChecked": false,
     "Script": [
-      "irm https://raw.githubusercontent.com/itt-co/itt-tweaks/refs/heads/main/Classic%20Volume%20Control/run.ps1 | iex"
+      "irm https://raw.githubusercontent.com/emadadeldev/itt-tweaks/refs/heads/main/Classic%20Volume%20Control/run.ps1 | iex"
     ]
   },
   {
@@ -230,7 +230,7 @@
     "Category": "Classic",
     "IsChecked": false,
     "Script": [
-      "irm https://raw.githubusercontent.com/itt-co/itt-tweaks/refs/heads/main/Disable%20Sticky%20Keys/run.ps1 | iex"
+      "irm https://raw.githubusercontent.com/emadadeldev/itt-tweaks/refs/heads/main/Disable%20Sticky%20Keys/run.ps1 | iex"
     ]
   },
   {
@@ -239,7 +239,7 @@
     "Category": "Privacy",
     "IsChecked": false,
     "Script": [
-      "irm https://raw.githubusercontent.com/itt-co/itt-tweaks/refs/heads/main/Disable%20Homegroup/run.ps1 | iex"
+      "irm https://raw.githubusercontent.com/emadadeldev/itt-tweaks/refs/heads/main/Disable%20Homegroup/run.ps1 | iex"
     ]
   },
   {
@@ -248,7 +248,7 @@
     "Category": "Privacy",
     "IsChecked": false,
     "Script": [
-      "irm https://raw.githubusercontent.com/itt-co/itt-tweaks/refs/heads/main/Remove%20Home%20and%20Gallery%20from%20explorer%20in%20Windows%2011/run.ps1 | iex"
+      "irm https://raw.githubusercontent.com/emadadeldev/itt-tweaks/refs/heads/main/Remove%20Home%20and%20Gallery%20from%20explorer%20in%20Windows%2011/run.ps1 | iex"
     ]
   },
   {
@@ -257,7 +257,7 @@
     "Category": "Protection",
     "IsChecked": false,
     "Script": [
-      "irm https://raw.githubusercontent.com/itt-co/itt-tweaks/refs/heads/main/Disable%20Wifi%20Sense/run.ps1 | iex"
+      "irm https://raw.githubusercontent.com/emadadeldev/itt-tweaks/refs/heads/main/Disable%20Wifi%20Sense/run.ps1 | iex"
     ]
   },
   {
@@ -266,7 +266,7 @@
     "Category": "Protection",
     "IsChecked": false,
     "Script": [
-      "irm https://raw.githubusercontent.com/itt-co/itt-tweaks/refs/heads/main/Disable%20Autoplay%20and%20Autorun/run.ps1 | iex"
+      "irm https://raw.githubusercontent.com/emadadeldev/itt-tweaks/refs/heads/main/Disable%20Autoplay%20and%20Autorun/run.ps1 | iex"
     ]
   },
   {
@@ -275,7 +275,7 @@
     "Category": "Protection",
     "IsChecked": false,
     "Script": [
-      "irm https://raw.githubusercontent.com/itt-co/itt-tweaks/refs/heads/main/Disable%20SMB%20Server/run.ps1 | iex"
+      "irm https://raw.githubusercontent.com/emadadeldev/itt-tweaks/refs/heads/main/Disable%20SMB%20Server/run.ps1 | iex"
     ]
   },
   {
@@ -284,7 +284,7 @@
     "Category": "Privacy",
     "IsChecked": false,
     "Script": [
-      "irm https://raw.githubusercontent.com/itt-co/itt-tweaks/refs/heads/main/Set%20network%20profile%20to%20public/run.ps1 | iex"
+      "irm https://raw.githubusercontent.com/emadadeldev/itt-tweaks/refs/heads/main/Set%20network%20profile%20to%20public/run.ps1 | iex"
     ]
   },
   {
@@ -293,7 +293,7 @@
     "Category": "BIOS",
     "IsChecked": false,
     "Script": [
-      "irm https://raw.githubusercontent.com/itt-co/itt-tweaks/refs/heads/main/Enable%20F8%20boot%20menu%20options/run.ps1 | iex"
+      "irm https://raw.githubusercontent.com/emadadeldev/itt-tweaks/refs/heads/main/Enable%20F8%20boot%20menu%20options/run.ps1 | iex"
     ]
   },
   {
@@ -302,7 +302,7 @@
     "Category": "Power",
     "IsChecked": false,
     "Script": [
-      "irm https://raw.githubusercontent.com/itt-co/itt-tweaks/refs/heads/main/Disable%20display%20and%20sleep%20mode%20timeouts/run.ps1 | iex"
+      "irm https://raw.githubusercontent.com/emadadeldev/itt-tweaks/refs/heads/main/Disable%20display%20and%20sleep%20mode%20timeouts/run.ps1 | iex"
     ]
   },
   {
@@ -311,7 +311,7 @@
     "Category": "Personalization",
     "IsChecked": false,
     "Script": [
-      "irm https://raw.githubusercontent.com/itt-co/itt-tweaks/refs/heads/main/Set%20Wallpaper%20desktop%20Quality%20to%20100%25/run.ps1 | iex"
+      "irm https://raw.githubusercontent.com/emadadeldev/itt-tweaks/refs/heads/main/Set%20Wallpaper%20desktop%20Quality%20to%20100%25/run.ps1 | iex"
     ]
   },
   {
@@ -320,7 +320,7 @@
     "Category": "Performance",
     "IsChecked": false,
     "Script": [
-      "irm https://raw.githubusercontent.com/itt-co/itt-tweaks/refs/heads/main/Disable%20Windows%20Transparency/run.ps1 | iex"
+      "irm https://raw.githubusercontent.com/emadadeldev/itt-tweaks/refs/heads/main/Disable%20Windows%20Transparency/run.ps1 | iex"
     ]
   },
   {
@@ -329,7 +329,7 @@
     "Category": "Performance",
     "IsChecked": false,
     "Script": [
-      "irm https://raw.githubusercontent.com/itt-co/itt-tweaks/refs/heads/main/Disable%20scheduled%20defragmentation%20task/run.ps1 | iex"
+      "irm https://raw.githubusercontent.com/emadadeldev/itt-tweaks/refs/heads/main/Disable%20scheduled%20defragmentation%20task/run.ps1 | iex"
     ]
   },
   {
@@ -338,7 +338,7 @@
     "Category": "Classic",
     "IsChecked": false,
     "Script": [
-      "irm https://raw.githubusercontent.com/itt-co/itt-tweaks/refs/heads/main/Enable%20NET%203.5/run.ps1 | iex"
+      "irm https://raw.githubusercontent.com/emadadeldev/itt-tweaks/refs/heads/main/Enable%20NET%203.5/run.ps1 | iex"
     ]
   },
   {
@@ -347,7 +347,7 @@
     "Category": "Performance",
     "IsChecked": false,
     "Script": [
-      "irm https://raw.githubusercontent.com/itt-co/itt-tweaks/refs/heads/main/Super%20Performance/run.ps1 | iex"
+      "irm https://raw.githubusercontent.com/emadadeldev/itt-tweaks/refs/heads/main/Super%20Performance/run.ps1 | iex"
     ]
   },
   {
@@ -356,7 +356,7 @@
     "Category": "Performance",
     "IsChecked": false,
     "Script": [
-      "irm https://raw.githubusercontent.com/itt-co/itt-tweaks/refs/heads/main/Remove%20Widgets%20from%20Taskbar%20in%20Windows%2011/run.ps1 | iex"
+      "irm https://raw.githubusercontent.com/emadadeldev/itt-tweaks/refs/heads/main/Remove%20Widgets%20from%20Taskbar%20in%20Windows%2011/run.ps1 | iex"
     ]
   },
   {
@@ -365,7 +365,7 @@
     "Category": "Privacy",
     "IsChecked": false,
     "Script": [
-      "irm https://raw.githubusercontent.com/itt-co/itt-tweaks/refs/heads/main/Set%20Username%20to%20Unknown/run.ps1 | iex"
+      "irm https://raw.githubusercontent.com/emadadeldev/itt-tweaks/refs/heads/main/Set%20Username%20to%20Unknown/run.ps1 | iex"
     ]
   },
   {
@@ -374,7 +374,7 @@
     "Category": "Fixer",
     "IsChecked": false,
     "Script": [
-      "irm https://raw.githubusercontent.com/itt-co/itt-tweaks/refs/heads/main/Fix%20Arabic%20encoding/run.ps1 | iex"
+      "irm https://raw.githubusercontent.com/emadadeldev/itt-tweaks/refs/heads/main/Fix%20Arabic%20encoding/run.ps1 | iex"
     ]
   },
   {
@@ -383,7 +383,7 @@
     "Category": "Fixer",
     "IsChecked": false,
     "Script": [
-      "irm https://raw.githubusercontent.com/itt-co/itt-tweaks/refs/heads/main/Restore%20Default%20File%20Type%20Associations/run.ps1 | iex"
+      "irm https://raw.githubusercontent.com/emadadeldev/itt-tweaks/refs/heads/main/Restore%20Default%20File%20Type%20Associations/run.ps1 | iex"
     ]
   },
   {
@@ -392,7 +392,7 @@
     "Category": "Performance",
     "IsChecked": false,
     "Script": [
-      "irm https://raw.githubusercontent.com/itt-co/itt-tweaks/refs/heads/main/Limit%20Defender%20CPU%20Usage/run.ps1 | iex"
+      "irm https://raw.githubusercontent.com/emadadeldev/itt-tweaks/refs/heads/main/Limit%20Defender%20CPU%20Usage/run.ps1 | iex"
     ]
   },
   {
@@ -401,7 +401,7 @@
     "Category": "Performance",
     "IsChecked": false,
     "Script": [
-      "irm https://raw.githubusercontent.com/itt-co/itt-tweaks/refs/heads/main/Optimizing%20GPU%20scheduling/run.ps1 | iex"
+      "irm https://raw.githubusercontent.com/emadadeldev/itt-tweaks/refs/heads/main/Optimizing%20GPU%20scheduling/run.ps1 | iex"
     ]
   },
   {
@@ -410,7 +410,7 @@
     "Category": "Performance",
     "IsChecked": false,
     "Script": [
-      "irm https://raw.githubusercontent.com/itt-co/itt-tweaks/refs/heads/main/Disable%20Fullscreen%20Optimizations/run.ps1 | iex"
+      "irm https://raw.githubusercontent.com/emadadeldev/itt-tweaks/refs/heads/main/Disable%20Fullscreen%20Optimizations/run.ps1 | iex"
     ]
   },
   {
@@ -419,7 +419,7 @@
     "Category": "Performance",
     "IsChecked": false,
     "Script": [
-      "irm https://raw.githubusercontent.com/itt-co/itt-tweaks/refs/heads/main/Optimize%20Network/run.ps1 | iex"
+      "irm https://raw.githubusercontent.com/emadadeldev/itt-tweaks/refs/heads/main/Optimize%20Network/run.ps1 | iex"
     ]
   },
   {
@@ -428,7 +428,7 @@
     "Category": "Performance",
     "IsChecked": false,
     "Script": [
-      "irm https://raw.githubusercontent.com/itt-co/itt-tweaks/refs/heads/main/Enable%20system%20cache/run.ps1 | iex"
+      "irm https://raw.githubusercontent.com/emadadeldev/itt-tweaks/refs/heads/main/Enable%20system%20cache/run.ps1 | iex"
     ]
   },
   {
@@ -437,7 +437,7 @@
     "Category": "Performance",
     "IsChecked": false,
     "Script": [
-      "irm https://raw.githubusercontent.com/itt-co/itt-tweaks/refs/heads/main/Optimizing%20NVIDIA%20GPU%20settings/run.ps1 | iex"
+      "irm https://raw.githubusercontent.com/emadadeldev/itt-tweaks/refs/heads/main/Optimizing%20NVIDIA%20GPU%20settings/run.ps1 | iex"
     ]
   },
   {
@@ -446,7 +446,7 @@
     "Category": "Performance",
     "IsChecked": false,
     "Script": [
-      "irm https://raw.githubusercontent.com/itt-co/itt-tweaks/refs/heads/main/Enable%20Faster%20Shutdown/run.ps1 | iex"
+      "irm https://raw.githubusercontent.com/emadadeldev/itt-tweaks/refs/heads/main/Enable%20Faster%20Shutdown/run.ps1 | iex"
     ]
   },
   {
@@ -455,7 +455,7 @@
     "Category": "Personalization",
     "IsChecked": false,
     "Script": [
-      "irm https://raw.githubusercontent.com/itt-co/itt-tweaks/refs/heads/main/Super%20Control%20Panel/run.ps1 | iex"
+      "irm https://raw.githubusercontent.com/emadadeldev/itt-tweaks/refs/heads/main/Super%20Control%20Panel/run.ps1 | iex"
     ]
   },
   {
@@ -464,7 +464,7 @@
     "Category": "Fixer",
     "IsChecked": false,
     "Script": [
-      "irm https://raw.githubusercontent.com/itt-co/itt-tweaks/refs/heads/main/Detailed%20BSoD/run.ps1 | iex"
+      "irm https://raw.githubusercontent.com/emadadeldev/itt-tweaks/refs/heads/main/Detailed%20BSoD/run.ps1 | iex"
     ]
   },
   {
@@ -473,7 +473,7 @@
     "Category": "BIOS",
     "IsChecked": false,
     "Script": [
-      "irm https://raw.githubusercontent.com/itt-co/itt-tweaks/refs/heads/main/Disable%20Windows%20Platform%20Binary%20Table/run.ps1 | iex"
+      "irm https://raw.githubusercontent.com/emadadeldev/itt-tweaks/refs/heads/main/Disable%20Windows%20Platform%20Binary%20Table/run.ps1 | iex"
     ]
   },
   {
@@ -482,7 +482,7 @@
     "Category": "Performance",
     "IsChecked": false,
     "Script": [
-      "irm https://raw.githubusercontent.com/itt-co/itt-tweaks/refs/heads/main/Disable%20Teredo/run.ps1 | iex"
+      "irm https://raw.githubusercontent.com/emadadeldev/itt-tweaks/refs/heads/main/Disable%20Teredo/run.ps1 | iex"
     ]
   },
   {
@@ -491,7 +491,7 @@
     "Category": "Performance",
     "IsChecked": false,
     "Script": [
-      "irm https://raw.githubusercontent.com/itt-co/itt-tweaks/refs/heads/main/Disable%20Storage%20Sense/run.ps1 | iex"
+      "irm https://raw.githubusercontent.com/emadadeldev/itt-tweaks/refs/heads/main/Disable%20Storage%20Sense/run.ps1 | iex"
     ]
   },
   {
@@ -500,7 +500,7 @@
     "Category": "Privacy",
     "IsChecked": false,
     "Script": [
-      "irm https://raw.githubusercontent.com/itt-co/itt-tweaks/refs/heads/main/Disable%20Activity%20History/run.ps1 | iex"
+      "irm https://raw.githubusercontent.com/emadadeldev/itt-tweaks/refs/heads/main/Disable%20Activity%20History/run.ps1 | iex"
     ]
   },
   {
@@ -509,7 +509,7 @@
     "Category": "Performance",
     "IsChecked": false,
     "Script": [
-      "irm https://raw.githubusercontent.com/itt-co/itt-tweaks/refs/heads/main/Debloat%20Brave/run.ps1 | iex"
+      "irm https://raw.githubusercontent.com/emadadeldev/itt-tweaks/refs/heads/main/Debloat%20Brave/run.ps1 | iex"
     ]
   },
   {
@@ -518,7 +518,7 @@
     "Category": "Privacy",
     "IsChecked": false,
     "Script": [
-      "irm https://raw.githubusercontent.com/itt-co/itt-tweaks/refs/heads/main/Disable%20ConsumerFeatures/run.ps1 | iex"
+      "irm https://raw.githubusercontent.com/emadadeldev/itt-tweaks/refs/heads/main/Disable%20ConsumerFeatures/run.ps1 | iex"
     ]
   },
   {
@@ -527,7 +527,7 @@
     "Category": "Performance",
     "IsChecked": false,
     "Script": [
-      "irm https://raw.githubusercontent.com/itt-co/itt-tweaks/refs/heads/main/Delete%20Temporary%20Files/run.ps1 | iex"
+      "irm https://raw.githubusercontent.com/emadadeldev/itt-tweaks/refs/heads/main/Delete%20Temporary%20Files/run.ps1 | iex"
     ]
   },
   {
@@ -536,7 +536,7 @@
     "Category": "BIOS",
     "IsChecked": false,
     "Script": [
-      "irm https://raw.githubusercontent.com/itt-co/itt-tweaks/refs/heads/main/Set%20Time%20to%20UTC%20(Dual%20Boot)/run.ps1 | iex"
+      "irm https://raw.githubusercontent.com/emadadeldev/itt-tweaks/refs/heads/main/Set%20Time%20to%20UTC%20(Dual%20Boot)/run.ps1 | iex"
     ]
   },
   {
@@ -545,7 +545,7 @@
     "Category": "Performance",
     "IsChecked": false,
     "Script": [
-      "irm https://raw.githubusercontent.com/itt-co/itt-tweaks/refs/heads/main/Debloat%20Edge/run.ps1 | iex"
+      "irm https://raw.githubusercontent.com/emadadeldev/itt-tweaks/refs/heads/main/Debloat%20Edge/run.ps1 | iex"
     ]
   },
   {
@@ -554,7 +554,7 @@
     "Category": "Performance",
     "IsChecked": false,
     "Script": [
-      "irm https://raw.githubusercontent.com/itt-co/itt-tweaks/refs/heads/main/Set%20Hibernation%20as%20default/run.ps1 | iex"
+      "irm https://raw.githubusercontent.com/emadadeldev/itt-tweaks/refs/heads/main/Set%20Hibernation%20as%20default/run.ps1 | iex"
     ]
   },
   {
@@ -563,7 +563,7 @@
     "Category": "Performance",
     "IsChecked": false,
     "Script": [
-      "irm https://raw.githubusercontent.com/itt-co/itt-tweaks/refs/heads/main/Change%20Icon%20Cache%20Size/run.ps1 | iex"
+      "irm https://raw.githubusercontent.com/emadadeldev/itt-tweaks/refs/heads/main/Change%20Icon%20Cache%20Size/run.ps1 | iex"
     ]
   },
   {
@@ -572,7 +572,7 @@
     "Category": "Power",
     "IsChecked": false,
     "Script": [
-      "irm https://raw.githubusercontent.com/itt-co/itt-tweaks/refs/heads/main/Disable%20hard%20disk%20sleep/run.ps1 | iex"
+      "irm https://raw.githubusercontent.com/emadadeldev/itt-tweaks/refs/heads/main/Disable%20hard%20disk%20sleep/run.ps1 | iex"
     ]
   }
 ]
