@@ -32,10 +32,10 @@ function Startup {
         }
         function LOG {
             Write-Host "  `n` "
-            Write-Host "  ███████████████████╗ Be the first to uncover the secret! Dive into"
-            Write-Host "  ██╚══██╔══╚═══██╔══╝ the source code, find the feature and integrate it"
-            Write-Host "  ██║  ██║ Emad ██║    https://github.com/emadadel4/itt"
-            Write-Host "  ██║  ██║ Adel ██║    "
+            Write-Host "  ███████████████████╗ My old GitHub account was restricted without any reason from GitHub support"
+            Write-Host "  ██╚══██╔══╚═══██╔══╝ This is the new repository, please share it so people can easily"
+            Write-Host "  ██║  ██║ Emad ██║    offical repo: https://github.com/emadadeldev/ittea"
+            Write-Host "  ██║  ██║ Adel ██║    Backup:https: //gitlab.com/emadadel/itt/"
             Write-Host "  ██║  ██║      ██║    "
             Write-Host "  ╚═╝  ╚═╝      ╚═╝    "
             UsageCount
