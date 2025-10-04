@@ -9,7 +9,7 @@ function Install-Dependencies {
             # Installing ITT Package manager if not exist
             if (-not (Get-Command itt -ErrorAction SilentlyContinue))
             {
-                Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; Invoke-Expression ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/itt-co/bin/refs/heads/main/install.ps1')) *> $null
+                Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; Invoke-Expression ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/emadadeldev/bin/refs/heads/main/install.ps1')) *> $null
             }
             else
             {
@@ -17,11 +17,11 @@ function Install-Dependencies {
                     # Check for updates
                     $currentVersion = (itt.exe -ver)
                     $installerPath = "$env:TEMP\installer.msi"
-                    $latestReleaseApi = "https://api.github.com/repos/itt-co/bin/releases/latest"
+                    $latestReleaseApi = "https://api.github.com/repos/emadadeldev/bin/releases/latest"
                     $latestVersion = (Invoke-RestMethod -Uri $latestReleaseApi).tag_name
                     if ($latestVersion -eq $currentVersion) {return}
                     # Write-Host "New version available: $latestVersion. Updating..."
-                    Invoke-WebRequest "https://github.com/itt-co/bin/releases/latest/download/installer.msi" -OutFile $installerPath
+                    Invoke-WebRequest "https://github.com/emadadeldev/bin/releases/latest/download/installer.msi" -OutFile $installerPath
                     Start-Process msiexec.exe -ArgumentList "/i `"$installerPath`" /q" -NoNewWindow -Wait
                     Write-Host "Updated to version $latestVersion successfully."
                     # Remove-Item -Path $installerPath -Force
