@@ -65,7 +65,7 @@ ITT (Install Tweaks Tool) included most Windows 10/11 Software and Windows Tweak
 2. Paste any of the following commands:
 
 ```PowerShell
-irm raw.githubusercontent.com/emadadel4/itt/main/itt.ps1 | iex
+irm raw.githubusercontent.com/emadadeldev/ittea/main/itt.ps1 | iex
 ```
 
 > [!CAUTION]  
