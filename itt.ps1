@@ -6,7 +6,7 @@ $Host.UI.RawUI.WindowTitle = "Install Twaeks Tool"
 $itt = [Hashtable]::Synchronized(@{
 database       = @{}
 ProcessRunning = $false
-lastupdate     = "10/02/2025"
+lastupdate     = "10/04/2025"
 registryPath   = "HKCU:\Software\ITT@emadadel"
 icon           = "https://raw.githubusercontent.com/emadadel4/ITT/main/static/Icons/icon.ico"
 Theme          = "default"
@@ -15,17 +15,6 @@ Language       = "default"
 ittDir         = "$env:ProgramData\itt\"
 command        = "$($MyInvocation.MyCommand.Definition)"
 })
-if(-not $Debug)
-{
-$checkUrl = "https://ver.emadadel4.workers.dev/check?version=$($itt.lastupdate)"
-$response = Invoke-RestMethod -Uri $checkUrl -ErrorAction Stop
-if ($response.status) {
-Write-Host "$($response.message)" -ForegroundColor Red
-read-host "   Press Enter to visit https://github.com/emadadel4/itt"
-Start-Process("https://github.com/emadadel4/itt")
-exit
-}
-}
 if (-not ([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole]::Administrator)) {
 Start-Process -FilePath "PowerShell" -ArgumentList "-ExecutionPolicy Bypass -NoProfile -Command `"$($MyInvocation.MyCommand.Definition)`"" -Verb RunAs
 exit
@@ -804,7 +793,7 @@ function UsageCount {
 try {
 $Message = "👨‍💻 Build Ver: $($itt.lastupdate)`n🚀 URL: $($itt.command)"
 $EncodedMessage = [uri]::EscapeDataString($Message)
-$Url = "https://itt.emadadel4.workers.dev/log?text=$EncodedMessage"
+$Url = "itt.emadadel4-a0a.workers.dev/log?text=$EncodedMessage"
 $result = Invoke-RestMethod -Uri $Url -Method GET
 Add-Log -Message "`n  $result times worldwide`n"
 }
@@ -1659,11 +1648,11 @@ $itt['window'].FindName('date').text = '10/02/2025'.Trim()
 $itt['window'].FindName('win').add_MouseLeftButtonDown({
 Start-Process('https://linkjust.com/massgravelts')
 })
-$itt['window'].FindName('bc').add_MouseLeftButtonDown({
-Start-Process('https://linkjust.com/batmancave')
-})
 $itt['window'].FindName('yt').add_MouseLeftButtonDown({
 Start-Process('https://youtu.be/0kZFi6NT1gI')
+})
+$itt['window'].FindName('bc').add_MouseLeftButtonDown({
+Start-Process('https://linkjust.com/batmancave')
 })
 $storedDate = [datetime]::ParseExact($itt['window'].FindName('date').Text, 'MM/dd/yyyy', $null)
 $daysElapsed = (Get-Date) - $storedDate
@@ -2802,6 +2791,7 @@ Foreground="{DynamicResource TextColorPrimary}" HorizontalAlignment="Center" Mar
 <ScrollViewer VerticalScrollBarVisibility="Auto" Margin="0,15,0,0" Height="80">
 <StackPanel Orientation="Vertical" Margin="15,0,0,0">
 <TextBlock Text="emadadel4" Margin="1" Foreground="{DynamicResource TextColorSecondaryColor}" />
+<TextBlock Text="emadadeldev" Margin="1" Foreground="{DynamicResource TextColorSecondaryColor}" />
 <TextBlock Text="youssefmhd" Margin="1" Foreground="{DynamicResource TextColorSecondaryColor}" />
 </StackPanel>
 </ScrollViewer>
@@ -3001,8 +2991,8 @@ $itt.QuoteIcon = $itt["window"].FindName("QuoteIcon")
 $h = [System.Net.Http.HttpClientHandler]::new()
 $h.AutomaticDecompression = [System.Net.DecompressionMethods] 'GZip,Deflate'
 $c = [System.Net.Http.HttpClient]::new($h)
-$appsUrl   = "https://raw.githubusercontent.com/emadadel4/itt/refs/heads/main/static/Database/Applications.json"
-$tweaksUrl = "https://raw.githubusercontent.com/emadadel4/itt/refs/heads/main/static/Database/Tweaks.json"
+$appsUrl   = "https://raw.githubusercontent.com/emadadeldev/ittea/refs/heads/main/static/Database/Applications.json"
+$tweaksUrl = "https://raw.githubusercontent.com/emadadeldev/ittea/refs/heads/main/static/Database/Tweaks.json"
 while ($true) {
 try {
 $aTask, $tTask = $c.GetStringAsync($appsUrl), $c.GetStringAsync($tweaksUrl)
