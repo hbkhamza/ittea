@@ -10,7 +10,7 @@ irm bit.ly/ittea | iex
 > If URL is blocked in your region try:
 
 ```PowerShell
-irm raw.githubusercontent.com/emadadel4/itt/main/itt.ps1 | iex
+irm raw.githubusercontent.com/emadadeldev/ittea/main/itt.ps1 | iex
 ```
 
 > [!CAUTION]  
@@ -18,7 +18,7 @@ irm raw.githubusercontent.com/emadadel4/itt/main/itt.ps1 | iex
 > **IT'S NOT PORTABLE, SO DO NOT DOWNLOAD OR RUN IT FROM ELSEWHERE.**
 
 > [!NOTE]  
-> All links point directly to the [itt.ps1](https://raw.githubusercontent.com/emadadel4/itt/refs/heads/main/itt.ps1)  file in this repository. You can test all links in browser, make sure the link starts with https://
+> All links point directly to the [itt.ps1](https://raw.githubusercontent.com/emadadeldev/ittea/refs/heads/main/itt.ps1)  file in this repository. You can test all links in browser, make sure the link starts with https://
 <div align="center" dir="auto">
 
 ### Watch a demo

@@ -599,7 +599,7 @@ WriteToScript -Content @"
 <#
     .NOTES
     Devloper  : @emadadel
-    Github    : https://github.com/emadadel4
+    Github    : https://github.com/emadadeldev
 #>
 "@
 }

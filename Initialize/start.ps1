@@ -20,7 +20,7 @@ $itt = [Hashtable]::Synchronized(@{
     ProcessRunning = $false
     lastupdate     = "#{replaceme}"
     registryPath   = "HKCU:\Software\ITT@emadadel"
-    icon           = "https://raw.githubusercontent.com/emadadel4/ITT/main/static/Icons/icon.ico"
+    icon           = "https://raw.githubusercontent.com/emadadeldev/ittea/main/static/Icons/icon.ico"
     Theme          = "default"
     Date           = (Get-Date -Format "MM/dd/yyy")
     Language       = "default"
@@ -40,8 +40,8 @@ $itt = [Hashtable]::Synchronized(@{
 #     $response = Invoke-RestMethod -Uri $checkUrl -ErrorAction Stop
 #     if ($response.status) {
 #         Write-Host "$($response.message)" -ForegroundColor Red
-#         read-host "   Press Enter to visit https://github.com/emadadel4/itt"
-#         Start-Process("https://github.com/emadadel4/itt")
+#         read-host "   Press Enter to visit https://github.com/emadadeldev/ittea"
+#         Start-Process("https://github.com/emadadeldev/ittea")
 #         exit
 #     }
 # }
