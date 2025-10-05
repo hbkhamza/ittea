@@ -68,6 +68,12 @@ ITT (Install Tweaks Tool) included most Windows 10/11 Software and Windows Tweak
 irm raw.githubusercontent.com/emadadeldev/ittea/main/itt.ps1 | iex
 ```
 
+or
+
+```
+irm bit.ly/ittco | iex
+```
+
 > [!CAUTION]  
 > **LAUNCH THE SCRIPT ONLY USING OFFICIAL COMMANDS FROM THIS REPOSITORY.**  
 > **IT'S NOT PORTABLE, SO DO NOT DOWNLOAD OR RUN IT FROM ELSEWHERE.**
