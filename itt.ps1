@@ -1656,14 +1656,14 @@ $itt.$Button.Content = $NonKey
 }
 function Show-Event {
 $itt['window'].FindName('date').text = '10/02/2025'.Trim()
-$itt['window'].FindName('yt').add_MouseLeftButtonDown({
-Start-Process('https://youtu.be/0kZFi6NT1gI')
+$itt['window'].FindName('bc').add_MouseLeftButtonDown({
+Start-Process('https://linkjust.com/batmancave')
 })
 $itt['window'].FindName('win').add_MouseLeftButtonDown({
 Start-Process('https://linkjust.com/massgravelts')
 })
-$itt['window'].FindName('bc').add_MouseLeftButtonDown({
-Start-Process('https://linkjust.com/batmancave')
+$itt['window'].FindName('yt').add_MouseLeftButtonDown({
+Start-Process('https://youtu.be/0kZFi6NT1gI')
 })
 $storedDate = [datetime]::ParseExact($itt['window'].FindName('date').Text, 'MM/dd/yyyy', $null)
 $daysElapsed = (Get-Date) - $storedDate
@@ -2546,7 +2546,7 @@ HorizontalAlignment="Center" VerticalAlignment="Top" Visibility="Hidden" Margin=
 <TextBlock Text='💠 Windows 10 LTS' FontSize='20' Padding='10 25 0 20' Foreground='{DynamicResource PrimaryButtonForeground}' FontWeight='bold' TextWrapping='Wrap'/>
 <Image x:Name='win' Cursor='Hand' ToolTip='Click to visit' Margin='15,0,0,15' Height='Auto' Width='388' HorizontalAlignment='Left'>
 <Image.Source>
-<BitmapImage UriSource='https://raw.githubusercontent.com/emadadeldev/ittea/5f153c968fafed4a650e83513d3b78087144d77b/static/Images/windows10lts.jpg' CacheOption='OnLoad'/>
+<BitmapImage UriSource='https://raw.githubusercontent.com/emadadeldev/ittea/refs/heads/main/static/Images/windows10lts.jpg' CacheOption='OnLoad'/>
 </Image.Source>
 </Image>
 <TextBlock Text='Download the official Windows 10 LTS ISO – the stable, long-term support version' FontSize='15' HorizontalAlignment='Left' Padding='10 0 0 10' Foreground='{DynamicResource TextColorSecondaryColor}' TextWrapping='Wrap' MaxWidth='450'/>
