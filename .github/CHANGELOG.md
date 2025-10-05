@@ -7,7 +7,7 @@
 
 ##### 💠 Windows 10 LTS
 
-![itt.xName:win [https://linkjust.com/massgravelts]](https://raw.githubusercontent.com/emadadeldev/ittea/5f153c968fafed4a650e83513d3b78087144d77b/static/Images/windows10lts.jpg)
+![itt.xName:win [https://linkjust.com/massgravelts]](https://raw.githubusercontent.com/emadadeldev/ittea/refs/heads/main/static/Images/windows10lts.jpg)
 
 #### Download the official Windows 10 LTS ISO – the stable, long-term support version
 
