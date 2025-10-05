@@ -34,17 +34,17 @@ $itt = [Hashtable]::Synchronized(@{
 # ================================
 #region Check for updates
 # ================================
-# if(-not $Debug)
-# {
-#     $checkUrl = "https://ver.emadadel4.workers.dev/check?version=$($itt.lastupdate)"
-#     $response = Invoke-RestMethod -Uri $checkUrl -ErrorAction Stop
-#     if ($response.status) {
-#         Write-Host "$($response.message)" -ForegroundColor Red
-#         read-host "   Press Enter to visit https://github.com/emadadeldev/ittea"
-#         Start-Process("https://github.com/emadadeldev/ittea")
-#         exit
-#     }
-# }
+if(-not $Debug)
+{
+    $checkUrl = "https://ver.emadadel4-a0a.workers.dev/check?version=$($itt.lastupdate)"
+    $response = Invoke-RestMethod -Uri $checkUrl -ErrorAction Stop
+    if ($response.status) {
+        Write-Host "$($response.message)" -ForegroundColor Red
+        read-host "   Press Enter to visit https://github.com/emadadeldev/ittea"
+        Start-Process("https://github.com/emadadeldev/ittea")
+        exit
+    }
+}
 # ================================
 #endregion Check for updates
 # ================================
