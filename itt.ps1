@@ -6,9 +6,9 @@ $Host.UI.RawUI.WindowTitle = "Install Twaeks Tool"
 $itt = [Hashtable]::Synchronized(@{
 database       = @{}
 ProcessRunning = $false
-lastupdate     = "10/04/2025"
+lastupdate     = "10/05/2025"
 registryPath   = "HKCU:\Software\ITT@emadadel"
-icon           = "https://raw.githubusercontent.com/emadadel4/ITT/main/static/Icons/icon.ico"
+icon           = "https://raw.githubusercontent.com/emadadeldev/ittea/main/static/Icons/icon.ico"
 Theme          = "default"
 Date           = (Get-Date -Format "MM/dd/yyy")
 Language       = "default"
@@ -189,7 +189,7 @@ ITTShortcut $action
 About
 }
 "shelltube"{
-Start-Process -FilePath "powershell" -ArgumentList "irm https://github.com/emadadel4/shelltube/releases/latest/download/st.ps1 | iex"
+Start-Process -FilePath "powershell" -ArgumentList "irm https://github.com/emadadeldev/shelltube/releases/latest/download/st.ps1 | iex"
 }
 "rapidos"{
 Start-Process ("https://github.com/rapid-community/RapidOS")
@@ -776,10 +776,10 @@ default { throw "Set-Taskbar Invalid state" }
 if($icon)
 {
 switch ($icon) {
-"done" {$itt["window"].taskbarItemInfo.Overlay = "https://raw.githubusercontent.com/emadadel4/ITT/main/static/Icons/done.png"}
-"logo" {$itt["window"].taskbarItemInfo.Overlay = "https://raw.githubusercontent.com/emadadel4/ITT/main/static/Icons/icon.ico"}
-"error" {$itt["window"].taskbarItemInfo.Overlay = "https://raw.githubusercontent.com/emadadel4/IT/main/static/Icons/error.png"}
-default{$itt["window"].taskbarItemInfo.Overlay = "https://raw.githubusercontent.com/emadadel4/main//static/Icons/icon.ico"}
+"done" {$itt["window"].taskbarItemInfo.Overlay = "https://raw.githubusercontent.com/emadadeldev/ittea/main/static/Icons/done.png"}
+"logo" {$itt["window"].taskbarItemInfo.Overlay = "https://raw.githubusercontent.com/emadadeldev/ittea/main/static/Icons/icon.ico"}
+"error" {$itt["window"].taskbarItemInfo.Overlay = "https://raw.githubusercontent.com/emadadeldev/ittea/main/static/Icons/error.png"}
+default{$itt["window"].taskbarItemInfo.Overlay = "https://raw.githubusercontent.com/emadadeldev/ittea/main/static/Icons/icon.ico"}
 }
 }
 }
@@ -804,7 +804,7 @@ UsageCount
 }
 }
 function Quotes {
-$q=(Invoke-RestMethod "https://raw.githubusercontent.com/emadadel4/itt/refs/heads/main/static/Database/Quotes.json").Quotes|Sort-Object {Get-Random}
+$q=(Invoke-RestMethod "https://raw.githubusercontent.com/emadadeldev/ittea/refs/heads/main/static/Database/Quotes.json").Quotes|Sort-Object {Get-Random}
 Set-Statusbar -Text "☕ $($itt.database.locales.Controls.$($itt.Language).welcome)"; Start-Sleep 18
 Set-Statusbar -Text "👁‍🗨 $($itt.database.locales.Controls.$($itt.Language).easter_egg)"; Start-Sleep 18
 $i=@{quote="💬";info="📢";music="🎵";Cautton="⚠";default="☕"}
@@ -1465,7 +1465,7 @@ $localIconPath = Join-Path -Path $appDataPath -ChildPath "icon.ico"
 Invoke-WebRequest -Uri $itt.icon -OutFile $localIconPath
 $Shortcut = (New-Object -ComObject WScript.Shell).CreateShortcut("$([Environment]::GetFolderPath('Desktop'))\ITT Emad Adel.lnk")
 $Shortcut.TargetPath = "$env:SystemRoot\System32\WindowsPowerShell\v1.0\powershell.exe"
-$Shortcut.Arguments = "-ExecutionPolicy Bypass -NoProfile -Command ""irm raw.githubusercontent.com/emadadel4/ITT/main/itt.ps1 | iex"""
+$Shortcut.Arguments = "-ExecutionPolicy Bypass -NoProfile -Command ""irm raw.githubusercontent.com/emadadeldev/ittea/main/itt.ps1 | iex"""
 $Shortcut.IconLocation = "$localIconPath"
 $Shortcut.Save()
 }
@@ -1669,7 +1669,7 @@ WindowStartupLocation="CenterScreen" Background="{DynamicResource PrimaryBackgro
 Width="950" Height="700" MinHeight="600" MinWidth="800"
 FontFamily="Arial" ShowInTaskbar="True"
 TextOptions.TextFormattingMode="Ideal" TextOptions.TextRenderingMode="Auto"
-Icon="https://raw.githubusercontent.com/emadadel4/ITT/main/static/Icons/icon.ico">
+Icon="https://raw.githubusercontent.com/emadadeldev/ittea/main/static/Icons/icon.ico">
 <Window.Resources>
 <Storyboard x:Key="FadeOutStoryboard">
 <DoubleAnimation
@@ -2790,7 +2790,6 @@ FontSize="13" FontFamily="Arial"
 Foreground="{DynamicResource TextColorPrimary}" HorizontalAlignment="Center" Margin="0,15,0,0"/>
 <ScrollViewer VerticalScrollBarVisibility="Auto" Margin="0,15,0,0" Height="80">
 <StackPanel Orientation="Vertical" Margin="15,0,0,0">
-<TextBlock Text="emadadel4" Margin="1" Foreground="{DynamicResource TextColorSecondaryColor}" />
 <TextBlock Text="emadadeldev" Margin="1" Foreground="{DynamicResource TextColorSecondaryColor}" />
 <TextBlock Text="youssefmhd" Margin="1" Foreground="{DynamicResource TextColorSecondaryColor}" />
 </StackPanel>
