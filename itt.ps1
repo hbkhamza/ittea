@@ -15,6 +15,17 @@ Language       = "default"
 ittDir         = "$env:ProgramData\itt\"
 command        = "$($MyInvocation.MyCommand.Definition)"
 })
+if(-not $Debug)
+{
+$checkUrl = "https://ver.emadadel4-a0a.workers.dev/check?version=$($itt.lastupdate)"
+$response = Invoke-RestMethod -Uri $checkUrl -ErrorAction Stop
+if ($response.status) {
+Write-Host "$($response.message)" -ForegroundColor Red
+read-host "   Press Enter to visit https://github.com/emadadeldev/ittea"
+Start-Process("https://github.com/emadadeldev/ittea")
+exit
+}
+}
 if (-not ([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole]::Administrator)) {
 Start-Process -FilePath "PowerShell" -ArgumentList "-ExecutionPolicy Bypass -NoProfile -Command `"$($MyInvocation.MyCommand.Definition)`"" -Verb RunAs
 exit
@@ -1645,11 +1656,11 @@ $itt.$Button.Content = $NonKey
 }
 function Show-Event {
 $itt['window'].FindName('date').text = '10/02/2025'.Trim()
-$itt['window'].FindName('win').add_MouseLeftButtonDown({
-Start-Process('https://linkjust.com/massgravelts')
-})
 $itt['window'].FindName('yt').add_MouseLeftButtonDown({
 Start-Process('https://youtu.be/0kZFi6NT1gI')
+})
+$itt['window'].FindName('win').add_MouseLeftButtonDown({
+Start-Process('https://linkjust.com/massgravelts')
 })
 $itt['window'].FindName('bc').add_MouseLeftButtonDown({
 Start-Process('https://linkjust.com/batmancave')
