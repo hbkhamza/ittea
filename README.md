@@ -1,10 +1,10 @@
-
-
 <p align="center">
  
 > [!NOTE]  
 > My old GitHub account was restricted without any reason from GitHub support.  
-> This is the new repository, please share it so people can easily find it. Backup repository on [Gitlab](https://gitlab.com/emadadel/itt/-/tree/main) and  [Codeberg](https://codeberg.org/emadadel/itt).  
+> This is the new repository and main, please share it so people can easily find it. 
+> There are backups on 
+> [Gitlab](https://gitlab.com/emadadel/itt/-/tree/main) and [Codeberg](https://codeberg.org/emadadel/itt).
 
 </p>
 
