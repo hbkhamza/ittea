@@ -4,13 +4,13 @@
 2. Paste any of the following commands:
 
 ```PowerShell
-irm bit.ly/ittea | iex
+irm raw.githubusercontent.com/emadadeldev/ittea/main/itt.ps1 | iex
 ```
 
-> If URL is blocked in your region try:
+**or**
 
 ```PowerShell
-irm raw.githubusercontent.com/emadadeldev/ittea/main/itt.ps1 | iex
+irm bit.ly/ittco | iex
 ```
 
 > [!CAUTION]  
