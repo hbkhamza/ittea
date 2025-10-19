@@ -17,10 +17,10 @@
 
 > [!NOTE]  
 >  Make sure you have PowerShell 7 installed (recommended) for building. is available on ITT
-1. **[Fork the repository](https://github.com/itt-co/itt/fork)**
+1. **[Fork the repository](https://github.com/emadadeldev/ittea/fork)**
 3. **Open ITT Directory in PowerShell 7 (Run as Administrator):**
 ```PowerShell
-Set-Location "C:\Users\$env:USERNAME\Documents\Github\ITT"
+Set-Location "C:\Users\$env:USERNAME\Documents\Github\ittea"
 ```
 4. **Choose what you want to add.**
 
@@ -32,7 +32,7 @@ Set-Location "C:\Users\$env:USERNAME\Documents\Github\ITT"
 
 <h3>⚙️ Add a New Tweak/Settings</h3>
 
-[➕ Add your script here](https://github.com/itt-co/itt-tweaks)
+[➕ Add your script here](https://github.com/emadadeldev/itt-tweaks)
 
 > Ensure you understand the tweak you are adding and test it before PR.
 
