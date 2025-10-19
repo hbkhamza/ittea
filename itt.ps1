@@ -3001,65 +3001,26 @@ $itt.QuoteIcon = $itt["window"].FindName("QuoteIcon")
 $h = [System.Net.Http.HttpClientHandler]::new()
 $h.AutomaticDecompression = [System.Net.DecompressionMethods] 'GZip,Deflate'
 $c = [System.Net.Http.HttpClient]::new($h)
-$appsUrl   = "https://raw.githubusercontent.com/emadadeldev/ittea/refs/heads/main/static/Database/Applications.json"
-$tweaksUrl = "https://raw.githubusercontent.com/emadadeldev/ittea/refs/heads/main/static/Database/Tweaks.json"
-while ($true) {
-try {
-Write-Host "[i] Fetching data from GitHub..." -ForegroundColor Cyan
-$aTask, $tTask = $c.GetStringAsync($appsUrl), $c.GetStringAsync($tweaksUrl)
-[Threading.Tasks.Task]::WaitAll($aTask, $tTask)
-$appsRaw   = [System.Text.Encoding]::UTF8.GetString([System.Text.Encoding]::UTF8.GetBytes($aTask.Result)).Trim([char]0xFEFF)
-$tweaksRaw = [System.Text.Encoding]::UTF8.GetString([System.Text.Encoding]::UTF8.GetBytes($tTask.Result)).Trim([char]0xFEFF)
-$appsData   = $appsRaw   | ConvertFrom-Json
-$tweaksData = $tweaksRaw | ConvertFrom-Json
-if ($appsData -and $tweaksData) {
-$itt.AppsListView.ItemsSource   = $appsData
-$itt.TweaksListView.ItemsSource = $tweaksData
-Write-Host "[✓] Data loaded successfully." -ForegroundColor Green
-break
-}
-else {
-Write-Host "[!] Data not ready, retrying..." -ForegroundColor Yellow
-}
-}
-catch {
-Write-Host "[x] Error: $($_.Exception.Message)" -ForegroundColor Red
-Write-Host "[!] Retrying in 8 seconds..." -ForegroundColor Yellow
-}
-Start-Sleep 8
-}
-$h = [System.Net.Http.HttpClientHandler]::new()
-$h.AutomaticDecompression = [System.Net.DecompressionMethods] 'GZip,Deflate'
-$c = [System.Net.Http.HttpClient]::new($h)
+b   bb
 $appsUrl   = "https://raw.githubusercontent.com/emadadeldev/ittea/refs/heads/main/static/Database/Applications.json"
 $tweaksUrl = "https://raw.githubusercontent.com/emadadeldev/ittea/refs/heads/main/static/Database/Tweaks.json"
 while ($true) {
 try {
 $aTask, $tTask = $c.GetStringAsync($appsUrl), $c.GetStringAsync($tweaksUrl)
 [Threading.Tasks.Task]::WaitAll($aTask, $tTask)
-$appsRaw   = $aTask.Result
-$tweaksRaw = $tTask.Result
-if ($appsRaw -and $tweaksRaw) {
-try {
-$appsData   = $appsRaw   | ConvertFrom-Json
-$tweaksData = $tweaksRaw | ConvertFrom-Json
-}
-catch {
-$appsData, $tweaksData = $null, $null
-}
-}
+$appsData   = $aTask.Result | ConvertFrom-Json
+$tweaksData = $tTask.Result | ConvertFrom-Json
 if ($appsData -and $tweaksData) {
 $itt.AppsListView.ItemsSource   = $appsData
 $itt.TweaksListView.ItemsSource = $tweaksData
-Write-Host "[✓] Data loaded successfully." -ForegroundColor Green
 break
 }
 else {
-Write-Host "[!] JSON not valid or empty, retrying..." -ForegroundColor Yellow
+Write-Host "Still loading data..." -ForegroundColor Yellow
 }
 }
 catch {
-Write-Host "[x] Network error: $($_.Exception.Message)" -ForegroundColor Red
+Write-Host "Unstable internet connection detected. Retrying in 8 seconds..." -ForegroundColor Yellow
 }
 Start-Sleep 8
 }
