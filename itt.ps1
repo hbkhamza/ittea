@@ -3001,7 +3001,6 @@ $itt.QuoteIcon = $itt["window"].FindName("QuoteIcon")
 $h = [System.Net.Http.HttpClientHandler]::new()
 $h.AutomaticDecompression = [System.Net.DecompressionMethods] 'GZip,Deflate'
 $c = [System.Net.Http.HttpClient]::new($h)
-b   bb
 $appsUrl   = "https://raw.githubusercontent.com/emadadeldev/ittea/refs/heads/main/static/Database/Applications.json"
 $tweaksUrl = "https://raw.githubusercontent.com/emadadeldev/ittea/refs/heads/main/static/Database/Tweaks.json"
 while ($true) {
