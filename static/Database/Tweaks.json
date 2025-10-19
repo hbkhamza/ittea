@@ -578,7 +578,7 @@
   {
     "Content": "Disable IPv6",
     "Description": "Disables IPv6.",
-    "Category": "Power",
+    "Category": "Performance",
     "IsChecked": false,
     "Script": [
       "irm https://raw.githubusercontent.com/emadadeldev/itt-tweaks/refs/heads/main/Disable%20IPv6/run.ps1 | iex"
