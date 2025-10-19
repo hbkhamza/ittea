@@ -1656,11 +1656,11 @@ $itt.$Button.Content = $NonKey
 }
 function Show-Event {
 $itt['window'].FindName('date').text = '10/02/2025'.Trim()
-$itt['window'].FindName('bc').add_MouseLeftButtonDown({
-Start-Process('https://linkjust.com/batmancave')
-})
 $itt['window'].FindName('yt').add_MouseLeftButtonDown({
 Start-Process('https://youtu.be/0kZFi6NT1gI')
+})
+$itt['window'].FindName('bc').add_MouseLeftButtonDown({
+Start-Process('https://linkjust.com/batmancave')
 })
 $itt['window'].FindName('win').add_MouseLeftButtonDown({
 Start-Process('https://linkjust.com/massgravelts')
@@ -3005,21 +3005,56 @@ $appsUrl   = "https://raw.githubusercontent.com/emadadeldev/ittea/refs/heads/mai
 $tweaksUrl = "https://raw.githubusercontent.com/emadadeldev/ittea/refs/heads/main/static/Database/Tweaks.json"
 while ($true) {
 try {
+Write-Host "[i] Fetching data from GitHub..." -ForegroundColor Cyan
 $aTask, $tTask = $c.GetStringAsync($appsUrl), $c.GetStringAsync($tweaksUrl)
 [Threading.Tasks.Task]::WaitAll($aTask, $tTask)
-$appsData   = $aTask.Result | ConvertFrom-Json
-$tweaksData = $tTask.Result | ConvertFrom-Json
+$appsRaw   = [System.Text.Encoding]::UTF8.GetString([System.Text.Encoding]::UTF8.GetBytes($aTask.Result)).Trim([char]0xFEFF)
+$tweaksRaw = [System.Text.Encoding]::UTF8.GetString([System.Text.Encoding]::UTF8.GetBytes($tTask.Result)).Trim([char]0xFEFF)
+$appsData   = $appsRaw   | ConvertFrom-Json
+$tweaksData = $tweaksRaw | ConvertFrom-Json
 if ($appsData -and $tweaksData) {
 $itt.AppsListView.ItemsSource   = $appsData
 $itt.TweaksListView.ItemsSource = $tweaksData
+Write-Host "[✓] Data loaded successfully." -ForegroundColor Green
 break
 }
 else {
-Write-Host "Still loading data..." -ForegroundColor Yellow
+Write-Host "[!] Data not ready, retrying..." -ForegroundColor Yellow
 }
 }
 catch {
-Write-Host "Unstable internet connection detected. Retrying in 8 seconds..." -ForegroundColor Yellow
+Write-Host "[x] Error: $($_.Exception.Message)" -ForegroundColor Red
+Write-Host "[!] Retrying in 8 seconds..." -ForegroundColor Yellow
+}
+Start-Sleep 8
+}
+$h = [System.Net.Http.HttpClientHandler]::new()
+$h.AutomaticDecompression = [System.Net.DecompressionMethods] 'GZip,Deflate'
+$c = [System.Net.Http.HttpClient]::new($h)
+$appsUrl   = "https://raw.githubusercontent.com/emadadeldev/ittea/refs/heads/main/static/Database/Applications.json"
+$tweaksUrl = "https://raw.githubusercontent.com/emadadeldev/ittea/refs/heads/main/static/Database/Tweaks.json"
+while ($true) {
+try {
+Write-Host "[i] Fetching data from GitHub..." -ForegroundColor Cyan
+$aTask, $tTask = $c.GetStringAsync($appsUrl), $c.GetStringAsync($tweaksUrl)
+[Threading.Tasks.Task]::WaitAll($aTask, $tTask)
+$appsRaw   = [System.Text.Encoding]::UTF8.GetString([System.Text.Encoding]::UTF8.GetBytes($aTask.Result)).Trim([char]0xFEFF)
+$tweaksRaw = [System.Text.Encoding]::UTF8.GetString([System.Text.Encoding]::UTF8.GetBytes($tTask.Result)).Trim([char]0xFEFF)
+$appsData   = $appsRaw   | ConvertFrom-Json
+$tweaksData = $tweaksRaw | ConvertFrom-Json
+if ($appsData -and $tweaksData) {
+$itt.AppsListView.ItemsSource   = $appsData
+$itt.TweaksListView.ItemsSource = $tweaksData
+Write-Host "[✓] Data loaded successfully." -ForegroundColor Green
+break
+}
+else {
+Write-Host "[!] Data not ready, retrying..." -ForegroundColor Yellow
+}
+}
+catch {
+Write-Host "[x] Error: $($_.Exception.Message)" -ForegroundColor Red
+Write-Host "[!] Retrying in 8 seconds..." -ForegroundColor Yellow
 }
 Start-Sleep 8
 }
