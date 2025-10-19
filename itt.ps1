@@ -3033,24 +3033,21 @@ $h.AutomaticDecompression = [System.Net.DecompressionMethods] 'GZip,Deflate'
 $c = [System.Net.Http.HttpClient]::new($h)
 $appsUrl   = "https://raw.githubusercontent.com/emadadeldev/ittea/refs/heads/main/static/Database/Applications.json"
 $tweaksUrl = "https://raw.githubusercontent.com/emadadeldev/ittea/refs/heads/main/static/Database/Tweaks.json"
-function Get-JsonFromUrl($url) {
+while ($true) {
 try {
-$response = $c.GetAsync($url).Result
-if (-not $response.IsSuccessStatusCode) {
-throw "HTTP $($response.StatusCode)"
-}
-$bytes = $response.Content.ReadAsByteArrayAsync().Result
-$jsonString = [System.Text.Encoding]::UTF8.GetString($bytes).Trim([char]0xFEFF)
-return ($jsonString | ConvertFrom-Json)
+$aTask, $tTask = $c.GetStringAsync($appsUrl), $c.GetStringAsync($tweaksUrl)
+[Threading.Tasks.Task]::WaitAll($aTask, $tTask)
+$appsRaw   = $aTask.Result
+$tweaksRaw = $tTask.Result
+if ($appsRaw -and $tweaksRaw) {
+try {
+$appsData   = $appsRaw   | ConvertFrom-Json
+$tweaksData = $tweaksRaw | ConvertFrom-Json
 }
 catch {
-Write-Host "[x] Failed to load $url -> $($_.Exception.Message)" -ForegroundColor Red
-return $null
+$appsData, $tweaksData = $null, $null
 }
 }
-while ($true) {
-$appsData   = Get-JsonFromUrl $appsUrl
-$tweaksData = Get-JsonFromUrl $tweaksUrl
 if ($appsData -and $tweaksData) {
 $itt.AppsListView.ItemsSource   = $appsData
 $itt.TweaksListView.ItemsSource = $tweaksData
@@ -3058,9 +3055,13 @@ Write-Host "[✓] Data loaded successfully." -ForegroundColor Green
 break
 }
 else {
-Write-Host "[!] Retrying in 8 seconds..." -ForegroundColor Yellow
-Start-Sleep 8
+Write-Host "[!] JSON not valid or empty, retrying..." -ForegroundColor Yellow
 }
+}
+catch {
+Write-Host "[x] Network error: $($_.Exception.Message)" -ForegroundColor Red
+}
+Start-Sleep 8
 }
 $MainXaml.SelectNodes("//*[@Name]") | ForEach-Object {
 $name = $_.Name
