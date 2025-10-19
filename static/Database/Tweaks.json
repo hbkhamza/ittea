@@ -583,5 +583,13 @@
     "Script": [
       "irm https://raw.githubusercontent.com/emadadeldev/itt-tweaks/refs/heads/main/Disable%20IPv6/run.ps1 | iex"
     ]
+  },
+  {
+    "Content": "Disable Windows Platform Binary Table (WPBT)",
+    "Description": "If enabled then allows your computer vendor to execute a program each time it boots. It enables computer vendors to force install anti-theft software, software drivers, or a software program conveniently. This could also be a security risk",
+    "Category": "Performance",
+    "IsChecked": false,
+    "Script": [
+      "irm https://raw.githubusercontent.com/emadadeldev/itt-tweaks/refs/heads/main/Disable%20Windows%20Platform%20Binary%20Table%20(WPBT)/run.ps1 | iex"
+    ]
   }
-]
