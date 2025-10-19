@@ -3033,15 +3033,24 @@ $h.AutomaticDecompression = [System.Net.DecompressionMethods] 'GZip,Deflate'
 $c = [System.Net.Http.HttpClient]::new($h)
 $appsUrl   = "https://raw.githubusercontent.com/emadadeldev/ittea/refs/heads/main/static/Database/Applications.json"
 $tweaksUrl = "https://raw.githubusercontent.com/emadadeldev/ittea/refs/heads/main/static/Database/Tweaks.json"
-while ($true) {
+function Get-JsonFromUrl($url) {
 try {
-Write-Host "[i] Fetching data from GitHub..." -ForegroundColor Cyan
-$aTask, $tTask = $c.GetStringAsync($appsUrl), $c.GetStringAsync($tweaksUrl)
-[Threading.Tasks.Task]::WaitAll($aTask, $tTask)
-$appsRaw   = [System.Text.Encoding]::UTF8.GetString([System.Text.Encoding]::UTF8.GetBytes($aTask.Result)).Trim([char]0xFEFF)
-$tweaksRaw = [System.Text.Encoding]::UTF8.GetString([System.Text.Encoding]::UTF8.GetBytes($tTask.Result)).Trim([char]0xFEFF)
-$appsData   = $appsRaw   | ConvertFrom-Json
-$tweaksData = $tweaksRaw | ConvertFrom-Json
+$response = $c.GetAsync($url).Result
+if (-not $response.IsSuccessStatusCode) {
+throw "HTTP $($response.StatusCode)"
+}
+$bytes = $response.Content.ReadAsByteArrayAsync().Result
+$jsonString = [System.Text.Encoding]::UTF8.GetString($bytes).Trim([char]0xFEFF)
+return ($jsonString | ConvertFrom-Json)
+}
+catch {
+Write-Host "[x] Failed to load $url -> $($_.Exception.Message)" -ForegroundColor Red
+return $null
+}
+}
+while ($true) {
+$appsData   = Get-JsonFromUrl $appsUrl
+$tweaksData = Get-JsonFromUrl $tweaksUrl
 if ($appsData -and $tweaksData) {
 $itt.AppsListView.ItemsSource   = $appsData
 $itt.TweaksListView.ItemsSource = $tweaksData
@@ -3049,14 +3058,9 @@ Write-Host "[✓] Data loaded successfully." -ForegroundColor Green
 break
 }
 else {
-Write-Host "[!] Data not ready, retrying..." -ForegroundColor Yellow
-}
-}
-catch {
-Write-Host "[x] Error: $($_.Exception.Message)" -ForegroundColor Red
 Write-Host "[!] Retrying in 8 seconds..." -ForegroundColor Yellow
-}
 Start-Sleep 8
+}
 }
 $MainXaml.SelectNodes("//*[@Name]") | ForEach-Object {
 $name = $_.Name
