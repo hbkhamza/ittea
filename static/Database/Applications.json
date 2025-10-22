@@ -4178,5 +4178,15 @@
     "itt": "na",
     "category": "Utilities",
     "IsChecked": false
+  },
+  {
+    "Content": "fastfetch",
+    "Description": "fastfetch is a fast and simple system information tool",
+    "choco": "fastfetch",
+    "scoop": "main/fastfetch",
+    "winget": "fastfetch",
+    "itt": "na",
+    "category": "Utilities",
+    "IsChecked": false
   }
 ]
